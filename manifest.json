@@ -1,0 +1,43 @@
+{
+    "name": "rust webhook server",
+    "id": "webhook-httpd",
+    "packaging_format": 1,
+    "description": {
+        "en": "a small webhook server that execute local command ",
+        "fr": "executer des commandes locales déclenchées par une url"
+    },
+    "version": "0.1.4~ynh1",
+    "url": "https://github.com/de-vri-es/webhook-httpd",
+    "upstream": {
+        "license": "BSD-2-Clause",
+        "website": "https://github.com/de-vri-es/webhook-httpd",
+        "admindoc": "https://github.com/de-vri-es/webhook-httpd",
+        "userdoc": "https://github.com/de-vri-es/webhook-httpd",
+        "code": "https://github.com/de-vri-es/webhook-httpd"
+    },
+    "license": "BSD-2-Clause",
+    "maintainer": {
+        "name": "Tobias Ollive",
+        "email": "tobias@ollive.oiseauroch.fr"
+    },
+    "requirements": {
+        "yunohost": ">= 11.0.0"
+    },
+    "multi_instance": true,
+    "services": [
+    ],
+    "arguments": {
+        "install": [
+            {
+                "name": "domain",
+                "type": "domain"
+            },
+            {
+                "name": "path",
+                "type": "path",
+                "example": "/example",
+                "default": "/example"
+            }
+        ]
+    }
+}
