@@ -29,7 +29,7 @@ An open source server to monitor your web applications and all other HTTP, TCP, 
 
 ## Captures d'écran
 
-![Capture d'écran de statping-ng](./doc/screenshots/example.jpg)
+![Capture d'écran de statping-ng](./doc/screenshots/statping.png)
 
 ## Avertissements / informations importantes
 
