@@ -1,0 +1,25 @@
+
+x-httpservice: &httpservice
+  type: http
+  method: GET
+  check_interval: 3600
+  timeout: 10
+  expected_status: 200
+  allow_notifications: true
+  notify_after: 2
+  notify_all_changes: true
+  redirect: true
+
+services:
+
+ - name: Yunohost
+   domain: https://yunohost.org
+   <<: *httpservice
+
+ - name: Yunohost Forum
+   domain: https://forum.yunohost.org
+   <<: *httpservice
+
+ - name: Statping
+   domain: https://statping-ng.github.io/
+   <<: *httpservice
