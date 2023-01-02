@@ -7,7 +7,8 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__FINALPATH__/
-ExecStart=__FINALPATH__/webhook-httpd --config config.yml
+EnvironmentFile=__FINALPATH__/.env
+ExecStart=__FINALPATH__/statping  --port __PORT__
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
 

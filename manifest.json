@@ -1,23 +1,23 @@
 {
-    "name": "rust webhook server",
-    "id": "webhook-httpd",
+    "name": "statping-ng",
+    "id": "statpingng",
     "packaging_format": 1,
     "description": {
-        "en": "a small webhook server that execute local command ",
-        "fr": "executer des commandes locales déclenchées par une url"
+        "en": "an external monitoring tool",
+        "fr": "un outils de monitoring externe"
     },
-    "version": "0.1.4~ynh1",
-    "url": "https://github.com/de-vri-es/webhook-httpd",
+    "version": "0.90.80~ynh1",
+    "url": "https://github.com/statping-ng/statping-ng/",
     "upstream": {
-        "license": "BSD-2-Clause",
-        "website": "https://github.com/de-vri-es/webhook-httpd",
-        "admindoc": "https://github.com/de-vri-es/webhook-httpd",
-        "userdoc": "https://github.com/de-vri-es/webhook-httpd",
-        "code": "https://github.com/de-vri-es/webhook-httpd"
+        "license": "GPL-3.0-only",
+        "website": "https://statping-ng.github.io/",
+        "admindoc": "https://github.com/statping-ng/statping-ng/wiki",
+        "userdoc": "https://statping-ng.github.io/",
+        "code": "https://github.com/statping-ng/statping-ng/"
     },
-    "license": "BSD-2-Clause",
+    "license": "GPL-3.0-only",
     "maintainer": {
-        "name": "Tobias Ollive",
+        "name": "oiseauroch",
         "email": "tobias@ollive.oiseauroch.fr"
     },
     "requirements": {
@@ -33,10 +33,31 @@
                 "type": "domain"
             },
             {
-                "name": "path",
-                "type": "path",
-                "example": "/example",
-                "default": "/example"
+                "name": "is_public",
+                "type": "boolean",
+                "default": true
+            },
+            {
+                "name": "language",
+                "type": "string",
+                "ask": {
+                    "en": "Choose the application language",
+                    "fr": "Choisissez la langue de l'application"
+                },
+                "choices": ["fr", "en","es","ru","de","cs","ja","ko","it","zh"],
+                "default": "fr"
+            },
+            {
+                "name": "admin",
+                "type": "user"
+            },
+            {
+                "name": "password",
+                "type": "password",
+                "help": {
+                    "en": "Choose an admin password",
+                    "fr": "Choisissez une phrase de passe pour l'administrateur."
+                }
             }
         ]
     }

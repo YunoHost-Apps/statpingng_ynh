@@ -28,6 +28,7 @@ ynh_script_progression --message="Loading installation settings..." --weight=1
 
 # Needed for helper "ynh_add_nginx_config"
 final_path=$(ynh_app_setting_get --app=$app --key=final_path)
+port=$(ynh_app_setting_get --app=$app --key=port)
 
 #=================================================
 # BACKUP BEFORE CHANGE URL THEN ACTIVE TRAP
@@ -99,6 +100,23 @@ then
 	# Store file checksum for the new config file location
 	ynh_store_file_checksum --file="/etc/nginx/conf.d/$new_domain.d/$app.conf"
 fi
+
+#==================================================
+# Change config file
+#==================================================
+ynh_script_progression --message="Modifying configuration file…" --weight=1
+
+db_name=$(ynh_app_setting_get --app=$app --key=db_name)
+db_pwd=$(ynh_app_setting_get --app=$app --key=psqlpwd)
+db_user=$(ynh_app_setting_get --app=$app --key=db_user)
+language=$(ynh_app_setting_get --app=$app --key=language)
+password=$(ynh_app_setting_get --app=$app --key=password)
+admin=$(ynh_app_setting_get --app=$app --key=admin)
+domain=$(ynh_app_setting_get --app=$app --key=domain)
+
+ynh_delete_file_checksum --file="$final_path/.env"
+ynh_add_config --template="../conf/.env" --destination="$final_path/.env"
+
 
 #=================================================
 # GENERIC FINALISATION
