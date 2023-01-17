@@ -24,7 +24,6 @@ An open source server to monitor your web applications and all other HTTP, TCP, 
 - Mobile app
 
 
-
 **Shipped version:** 0.90.80~ynh1
 
 ## Screenshots

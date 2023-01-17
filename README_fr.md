@@ -5,15 +5,15 @@ It shall NOT be edited by hand.
 
 # statping-ng pour YunoHost
 
-[![Niveau d'intégration](https://dash.yunohost.org/integration/statpingng.svg)](https://dash.yunohost.org/appci/app/statpingng) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/statpingng.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/statpingng.maintain.svg)  
+[![Niveau d’intégration](https://dash.yunohost.org/integration/statpingng.svg)](https://dash.yunohost.org/appci/app/statpingng) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/statpingng.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/statpingng.maintain.svg)  
 [![Installer statping-ng avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=statpingng)
 
 *[Read this readme in english.](./README.md)*
 
-> *Ce package vous permet d'installer statping-ng rapidement et simplement sur un serveur YunoHost.
-Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l'installer et en profiter.*
+> *Ce package vous permet d’installer statping-ng rapidement et simplement sur un serveur YunoHost.
+Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l’installer et en profiter.*
 
-## Vue d'ensemble
+## Vue d’ensemble
 
 An open source server to monitor your web applications and all other HTTP, TCP, UDP, ICMP and gRPC services.
 
@@ -24,12 +24,11 @@ An open source server to monitor your web applications and all other HTTP, TCP, 
 - Mobile app
 
 
-
 **Version incluse :** 0.90.80~ynh1
 
-## Captures d'écran
+## Captures d’écran
 
-![Capture d'écran de statping-ng](./doc/screenshots/statping.png)
+![Capture d’écran de statping-ng](./doc/screenshots/statping.png)
 
 ## Avertissements / informations importantes
 
@@ -41,10 +40,10 @@ An open source server to monitor your web applications and all other HTTP, TCP, 
 
 ## Documentations et ressources
 
-* Site officiel de l'app : <https://statping-ng.github.io/>
+* Site officiel de l’app : <https://statping-ng.github.io/>
 * Documentation officielle utilisateur : <https://statping-ng.github.io/>
-* Documentation officielle de l'admin : <https://github.com/statping-ng/statping-ng/wiki>
-* Dépôt de code officiel de l'app : <https://github.com/statping-ng/statping-ng/>
+* Documentation officielle de l’admin : <https://github.com/statping-ng/statping-ng/wiki>
+* Dépôt de code officiel de l’app : <https://github.com/statping-ng/statping-ng/>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_statpingng>
 * Signaler un bug : <https://github.com/YunoHost-Apps/statpingng_ynh/issues>
 
@@ -60,4 +59,4 @@ ou
 sudo yunohost app upgrade statpingng -u https://github.com/YunoHost-Apps/statpingng_ynh/tree/testing --debug
 ```
 
-**Plus d'infos sur le packaging d'applications :** <https://yunohost.org/packaging_apps>
+**Plus d’infos sur le packaging d’applications :** <https://yunohost.org/packaging_apps>
