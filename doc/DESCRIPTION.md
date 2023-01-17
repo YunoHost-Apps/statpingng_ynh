@@ -5,4 +5,3 @@ An open source server to monitor your web applications and all other HTTP, TCP, 
 - Service Monitoring
 - Notifications
 - Mobile app
-

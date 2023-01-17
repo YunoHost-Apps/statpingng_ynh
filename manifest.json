@@ -3,8 +3,8 @@
     "id": "statpingng",
     "packaging_format": 1,
     "description": {
-        "en": "an external monitoring tool",
-        "fr": "un outils de monitoring externe"
+        "en": "External monitoring tool",
+        "fr": "Outils de monitoring externe"
     },
     "version": "0.90.80~ynh1",
     "url": "https://github.com/statping-ng/statping-ng/",
