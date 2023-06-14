@@ -31,14 +31,6 @@ An open source server to monitor your web applications and all other HTTP, TCP, 
 
 ![Screenshot of statping-ng](./doc/screenshots/statping.png)
 
-## Disclaimers / important information
-
-* Limitations :
-    * require a full dedicated domain
-    * architectures not supported ?
-    * no LDAP integration
-
-
 ## Documentation and resources
 
 * Official app website: <https://statping-ng.github.io/>
