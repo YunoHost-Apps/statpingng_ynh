@@ -65,7 +65,6 @@ ram.runtime = "50M"
     armhf.url = "https://github.com/statping-ng/statping-ng/releases/download/v0.90.80/statping-linux-arm-7.tar.gz"
     armhf.sha256 = "05806be5e5b66751283e39c193335d266a9268821aab8710183eb74b06cc8bb2"
 
-
     [resources.ports]
 
     [resources.system_user]
