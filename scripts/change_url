@@ -30,8 +30,10 @@ ynh_change_url_nginx_config
 #==================================================
 ynh_script_progression --message="Modifying configuration file…" --weight=1
 
-ynh_delete_file_checksum --file="$install_dir/.env"
-ynh_add_config --template="../conf/.env" --destination="$install_dir/.env"
+#ynh_delete_file_checksum --file="$install_dir/.env"
+#ynh_add_config --template="../conf/.env" --destination="$install_dir/.env"
+
+sed -i "/DOMAIN=/c\DOMAIN=https://${new_domain}" $install_dir/.env
 
 #=================================================
 # GENERIC FINALISATION
