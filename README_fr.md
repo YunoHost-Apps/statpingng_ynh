@@ -5,7 +5,8 @@ It shall NOT be edited by hand.
 
 # statping-ng pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/statpingng.svg)](https://dash.yunohost.org/appci/app/statpingng) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/statpingng.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/statpingng.maintain.svg)  
+[![Niveau d’intégration](https://dash.yunohost.org/integration/statpingng.svg)](https://dash.yunohost.org/appci/app/statpingng) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/statpingng.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/statpingng.maintain.svg)
+
 [![Installer statping-ng avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=statpingng)
 
 *[Read this readme in english.](./README.md)*
