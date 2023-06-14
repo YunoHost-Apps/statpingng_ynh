@@ -8,7 +8,6 @@
 # PERSONAL HELPERS
 #=================================================
 
-
 STATPING_VERSION="0.90.80"
 
 get_ip() {
