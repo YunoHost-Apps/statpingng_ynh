@@ -1,0 +1,81 @@
+packaging_format = 2
+
+id = "statpingng"
+name = "statping-ng"
+description.en = "External monitoring tool"
+description.fr = "Outils de monitoring externe"
+
+version = "0.90.80~ynh1"
+
+maintainers = ["oiseauroch"]
+
+[upstream]
+license = "GPL-3.0-only"
+website = "https://statping-ng.github.io/"
+admindoc = "https://github.com/statping-ng/statping-ng/wiki"
+userdoc = "https://statping-ng.github.io/"
+code = "https://github.com/statping-ng/statping-ng/"
+
+[integration]
+yunohost = ">= 11.1.20"
+architectures = "all"
+multi_instance = true
+ldap = false
+sso = false
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+    full_domain = true
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+    [install.language]
+    ask.en = "Choose the application language"
+    ask.fr = "Choisissez la langue de l'application"
+    type = "string"
+    choices = ["fr", "en", "es", "ru", "de", "cs", "ja", "ko", "it", "zh"]
+    default = "fr"
+
+    [install.admin]
+    type = "user"
+
+    [install.password]
+    help.en = "Choose an admin password"
+    help.fr = "Choisissez une phrase de passe pour l'administrateur."
+    type = "password"
+
+[resources]
+
+    [resources.sources]
+
+    [resources.sources.main]
+    in_subdir = false
+    amd64.url = "https://github.com/statping-ng/statping-ng/releases/download/v0.90.80/statping-linux-amd64.tar.gz"
+    amd64.sha256 = "c82e1c09775bdf40ee6e742f2b63e9630e70a058bc988423230994ad9bcfc87a"
+    arm64.url = "https://github.com/statping-ng/statping-ng/releases/download/v0.90.80/statping-linux-arm64.tar.gz"
+    arm64.sha256 = "d4b0141772a632d6db8af4fbe5d43da019fded264405f4e2a03c7aaeabb0fa73"
+    i386.url = "https://github.com/statping-ng/statping-ng/releases/download/v0.90.80/statping-linux-386.tar.gz"
+    i386.sha256 = "1b8b0cac093d1f0d9b646ea1c25483c7494b00ce2868b573d3aa31d806e9d6f3"
+    armhf.url = "https://github.com/statping-ng/statping-ng/releases/download/v0.90.80/statping-linux-arm-7.tar.gz"
+    armhf.sha256 = "05806be5e5b66751283e39c193335d266a9268821aab8710183eb74b06cc8bb2"
+
+    [resources.ports]
+
+    [resources.system_user]
+
+    [resources.install_dir]
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.apt]
+    packages = "postgresql"
+
+    [resources.database]
+    type = "postgresql"

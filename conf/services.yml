@@ -12,11 +12,11 @@ x-httpservice: &httpservice
 
 services:
 
- - name: Yunohost
+ - name: YunoHost
    domain: https://yunohost.org
    <<: *httpservice
 
- - name: Yunohost Forum
+ - name: YunoHost Forum
    domain: https://forum.yunohost.org
    <<: *httpservice
 
