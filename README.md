@@ -37,7 +37,7 @@ An open source server to monitor your web applications and all other HTTP, TCP, 
 * Official user documentation: <https://statping-ng.github.io/>
 * Official admin documentation: <https://github.com/statping-ng/statping-ng/wiki>
 * Upstream app code repository: <https://github.com/statping-ng/statping-ng/>
-* YunoHost documentation for this app: <https://yunohost.org/app_statpingng>
+* YunoHost Store: <https://apps.yunohost.org/app/statpingng>
 * Report a bug: <https://github.com/YunoHost-Apps/statpingng_ynh/issues>
 
 ## Developer info
