@@ -23,8 +23,8 @@ chown -R $app:www-data "$install_dir"
 #=================================================
 ynh_script_progression --message="Adding a configuration file..."
 
-ynh_add_config --template="../conf/.env" --destination="$install_dir/.env"
-ynh_add_config --template="../conf/services.yml" --destination="$install_dir/services.yml"
+ynh_add_config --template=".env" --destination="$install_dir/.env"
+ynh_add_config --template="services.yml" --destination="$install_dir/services.yml"
 
 chmod 400 "$install_dir/.env"
 chown $app:$app "$install_dir/.env"
@@ -43,7 +43,7 @@ ynh_add_systemd_config
 # Use logrotate to manage application logfile(s)
 ynh_use_logrotate
 
-yunohost service add $app --description="extern monitoring tool" --log="/var/log/$app/$app.log"
+yunohost service add $app --description="Extern monitoring tool" --log="/var/log/$app/$app.log"
 
 #=================================================
 # START SYSTEMD SERVICE

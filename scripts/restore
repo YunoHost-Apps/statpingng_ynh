@@ -21,13 +21,6 @@ chmod -R o-rwx "$install_dir"
 chown -R $app:www-data "$install_dir"
 
 #=================================================
-# RESTORE THE NGINX CONFIGURATION
-#=================================================
-ynh_script_progression --message="Restoring the NGINX web server configuration..."  --weight=1
-
-ynh_restore_file --origin_path="/etc/nginx/conf.d/$domain.d/$app.conf"
-
-#=================================================
 # RESTORE THE POSTGRESQL DATABASE
 #=================================================
 ynh_script_progression --message="Restoring the PostgreSQL database..."
@@ -42,20 +35,12 @@ ynh_script_progression --message="Restoring the systemd configuration..." --weig
 ynh_restore_file --origin_path="/etc/systemd/system/$app.service"
 systemctl enable $app.service --quiet
 
-#=================================================
-# RESTORE THE LOGROTATE CONFIGURATION
-#=================================================
-ynh_script_progression --message="Restoring the logrotate configuration..." --weight=1
+ynh_restore_file --origin_path="/etc/nginx/conf.d/$domain.d/$app.conf"
 
 mkdir /var/log/$app
 ynh_restore_file --origin_path="/etc/logrotate.d/$app"
 
-#=================================================
-# INTEGRATE SERVICE IN YUNOHOST
-#=================================================
-ynh_script_progression --message="Integrating service in YunoHost..." --weight=1
-
-yunohost service add $app --description="extern monitoring tool" --log="/var/log/$app/$app.log"
+yunohost service add $app --description="Extern monitoring tool" --log="/var/log/$app/$app.log"
 
 #=================================================
 # START SYSTEMD SERVICE
