@@ -30,16 +30,15 @@ ynh_systemd_action --service_name=$app --action="stop" --log_path="/var/log/$app
 
 if [ "$upgrade_type" == "UPGRADE_APP" ]
 then
-	ynh_script_progression --message="Upgrading source files..." --weight=1
+    ynh_script_progression --message="Upgrading source files..." --weight=1
 
-	# Download, check integrity, uncompress and patch the source from app.src
-    pushd "$install_dir"
-        install_statping
-    popd
+    # Download, check integrity, uncompress and patch the source from app.src
+    ynh_setup_source --dest_dir="$install_dir"
 fi
 
 chmod -R o-rwx "$install_dir"
 chown -R $app:$app "$install_dir"
+chmod +x $install_dir/statping
 
 #=================================================
 # NGINX CONFIGURATION
