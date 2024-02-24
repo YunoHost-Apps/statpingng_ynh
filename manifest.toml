@@ -69,7 +69,7 @@ ram.runtime = "50M"
     autoupdate.asset.amd64 = "^statping-linux-amd64.tar.gz$"
     autoupdate.asset.arm64 = "^statping-linux-arm64.tar.gz$"
     autoupdate.asset.i386 = "^statping-linux-386.tar.gz$"
-    autoupdate.asset.rmhf = "^statping-linux-arm-7.tar.gz$"
+    autoupdate.asset.armhf = "^statping-linux-arm-7.tar.gz$"
 
     [resources.ports]
 
