@@ -5,7 +5,7 @@ name = "statping-ng"
 description.en = "External monitoring tool"
 description.fr = "Outils de monitoring externe"
 
-version = "0.90.80~ynh1"
+version = "0.91.0~ynh1"
 
 maintainers = ["oiseauroch"]
 
@@ -56,14 +56,14 @@ ram.runtime = "50M"
 
     [resources.sources.main]
     in_subdir = false
-    amd64.url = "https://github.com/statping-ng/statping-ng/releases/download/v0.90.80/statping-linux-amd64.tar.gz"
-    amd64.sha256 = "c82e1c09775bdf40ee6e742f2b63e9630e70a058bc988423230994ad9bcfc87a"
-    arm64.url = "https://github.com/statping-ng/statping-ng/releases/download/v0.90.80/statping-linux-arm64.tar.gz"
-    arm64.sha256 = "d4b0141772a632d6db8af4fbe5d43da019fded264405f4e2a03c7aaeabb0fa73"
-    i386.url = "https://github.com/statping-ng/statping-ng/releases/download/v0.90.80/statping-linux-386.tar.gz"
-    i386.sha256 = "1b8b0cac093d1f0d9b646ea1c25483c7494b00ce2868b573d3aa31d806e9d6f3"
-    armhf.url = "https://github.com/statping-ng/statping-ng/releases/download/v0.90.80/statping-linux-arm-7.tar.gz"
-    armhf.sha256 = "05806be5e5b66751283e39c193335d266a9268821aab8710183eb74b06cc8bb2"
+    amd64.url = "https://github.com/statping-ng/statping-ng/releases/download/v0.91.0/statping-linux-amd64.tar.gz"
+    amd64.sha256 = "0f748cf32b27c7125d73851096db24fd3136990a2fd530387d6757562eb798b4"
+    arm64.url = "https://github.com/statping-ng/statping-ng/releases/download/v0.91.0/statping-linux-arm64.tar.gz"
+    arm64.sha256 = "d6952e66fe5f4fec2f10fb35a87634b151bf12403397e4bd131517420a9b6e82"
+    i386.url = "https://github.com/statping-ng/statping-ng/releases/download/v0.91.0/statping-linux-386.tar.gz"
+    i386.sha256 = "d50773ebdd2769693ee01a55266a66726bf9a0df7f29a27cf555c16aa8d358cc"
+    armhf.url = "https://github.com/statping-ng/statping-ng/releases/download/v0.91.0/statping-linux-arm-7.tar.gz"
+    armhf.sha256 = "850d1a20cd0502b06c39ad1433204f3076e616a95d2b984395f593d2f0f52c9f"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset.amd64 = "^statping-linux-amd64.tar.gz$"
