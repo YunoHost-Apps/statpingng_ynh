@@ -5,7 +5,9 @@
 
 # YunoHost 上的 statping-ng
 
-[![集成程度](https://dash.yunohost.org/integration/statpingng.svg)](https://dash.yunohost.org/appci/app/statpingng) ![工作状态](https://ci-apps.yunohost.org/ci/badges/statpingng.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/statpingng.maintain.svg)
+[![集成程度](https://apps.yunohost.org/badge/integration/statpingng)](https://ci-apps.yunohost.org/ci/apps/statpingng/)
+![工作状态](https://apps.yunohost.org/badge/state/statpingng)
+![维护状态](https://apps.yunohost.org/badge/maintained/statpingng)
 
 [![使用 YunoHost 安装 statping-ng](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=statpingng)
 
@@ -25,7 +27,7 @@ An open source server to monitor your web applications and all other HTTP, TCP, 
 - Mobile app
 
 
-**分发版本：** 0.91.0~ynh1
+**分发版本：** 0.92.0~ynh1
 
 ## 截图
 
