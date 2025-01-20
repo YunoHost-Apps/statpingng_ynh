@@ -5,7 +5,9 @@ NON debe editarse manualmente.
 
 # statping-ng para YunoHost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/statpingng.svg)](https://dash.yunohost.org/appci/app/statpingng) ![Estado de funcionamento](https://ci-apps.yunohost.org/ci/badges/statpingng.status.svg) ![Estado de mantemento](https://ci-apps.yunohost.org/ci/badges/statpingng.maintain.svg)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/statpingng)](https://ci-apps.yunohost.org/ci/apps/statpingng/)
+![Estado de funcionamento](https://apps.yunohost.org/badge/state/statpingng)
+![Estado de mantemento](https://apps.yunohost.org/badge/maintained/statpingng)
 
 [![Instalar statping-ng con YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=statpingng)
 
@@ -25,7 +27,7 @@ An open source server to monitor your web applications and all other HTTP, TCP, 
 - Mobile app
 
 
-**Versión proporcionada:** 0.91.0~ynh1
+**Versión proporcionada:** 0.92.0~ynh1
 
 ## Capturas de pantalla
 
