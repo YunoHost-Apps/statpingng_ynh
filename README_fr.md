@@ -18,13 +18,13 @@ Il NE doit PAS être modifié à la main.
 
 ## Vue d’ensemble
 
-An open source server to monitor your web applications and all other HTTP, TCP, UDP, ICMP and gRPC services.
+Un serveur open source pour surveiller vos applications web et tous les autres services HTTP, TCP, UDP, ICMP et gRPC.
 
-### Features
+### Caractéristiques
 
-- Service Monitoring
+- Surveillance des services
 - Notifications
-- Mobile app
+- Application mobile
 
 
 **Version incluse :** 0.92.0~ynh1
