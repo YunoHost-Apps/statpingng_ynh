@@ -27,7 +27,7 @@ An open source server to monitor your web applications and all other HTTP, TCP, 
 - Mobile app
 
 
-**Versi terkirim:** 0.92.0~ynh1
+**Versi terkirim:** 0.92.0~ynh2
 
 ## Tangkapan Layar
 
