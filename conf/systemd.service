@@ -1,5 +1,5 @@
 [Unit]
-Description=Statping
+Description=Statping: external monitoring tool
 After=network.target
 
 [Service]
