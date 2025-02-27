@@ -27,7 +27,7 @@ Un serveur open source pour surveiller vos applications web et tous les autres s
 - Application mobile
 
 
-**Version incluse :** 0.92.0~ynh1
+**Version incluse :** 0.92.0~ynh2
 
 ## Captures d’écran
 
